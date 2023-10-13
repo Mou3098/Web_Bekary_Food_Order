@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Order Form</title>
+ <script>
+ //this function use in button
+ function m(){
+	 document.getElementById("demo").innerHTML = "SUCCESSFULLY ORDERED";
+}
+// this is onclick function
+function p(){
+	 alert(" WELCOME TO BEKARY PRODUCTS");
+ }
+ </script>
+ <style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border-radius: 70%;
+}
+body {
+  font-family: sans-serif;
+  background-color:#F9B347  ;
+}
+.aligncenter{
+text-align: center;
+}
+h4{
+font-family:Times New Roman;
+background-color:#A6ACAF ;
+padding:24px;
+border-radius: 25px;
+font-size:24px;
+margin:50px;
+
+}
+#rcorners1 {
+  border-radius: 25px;
+  background: #DFD0BF;
+  padding: 40px; 
+  
+  margin-bottom:70px;
+  margin-left:70px;
+  margin-right:70px;
+}
+h5{
+font-family:Times New Roman;
+font-size:24px;
+}
+.whitecolor{
+color:white;
+}
+.a{
+  color:#5D554C;
+  font-family:Times New Roman;
+  font-size:19px;
+}
+.a2 {
+color:#5D554C ;
+  font-style: italic;
+}
+.a3{
+	color:#6C645A ;
+	padding-left:40px;
+}
+.b2{
+	color::#5D554C ;
+	padding-left=38%;
+}
+
+.darkgray{
+	color:#797D7F ;
+}
+.a4 {
+color:#5D554C ;
+}
+ .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #F4A83B  ;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #EF9108;} 
+
+.button:active {
+  background-color: #F67809 ;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#b{
+	padding-left:42%;
+}
+ </style>
+ </head>
+<body onload="p()">
+<body onload="p()">
+<h4 class="aligncenter whitecolor" >Food Order Form</h4>
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bread_in_the_Hellenic_Republic.jpg/1200px-Bread_in_the_Hellenic_Republic.jpg" alt="" class="center"><br>
+<div id="rcorners1">
+
+<h5 class="aligncenter">Bakery Products Order</h5>
+
+<hr>
+
+ <p class="a"><b>Products :</b></p>
+ <!-- All products item written here -->
+ <input type="checkbox" id="v1" name="Bread" value="Bread">
+  <label for="v1" class="a2">Bread (12 items per tray) $ 10.00</label><br>
+   <label for="quantity" class="a3">Quantity:</label>
+  <input type="number" id="quantity1" name="quantity1" min="1" max="100" step="10" value="1" ><br>
+  <input type="checkbox" id="v2" name="Doughnuts" value="Doughnuts">
+  <label for="v2" class="a2"> Doughnuts Assorted (12 items per box) $ 15.00 </label><br>
+    <label for="quantity" class="a3">Quantity:</label>
+  <input type="number" id="quantity2" name="quantity2" min="1" max="100" step="10" value="1" ><br>
+  <input type="checkbox" id="v3" name="Cookies" value="Cookies">
+  <label for="v3" class="a2"> Cookies (25 items per box) $ 25.00 </label><br>
+  <label for="quantity" class="a3">Quantity:</label>
+  <input type="number" id="quantity3" name="quantity3" min="1" max="100" step="10" value="1" ><br>
+  <input type="checkbox" id="v4" name="Muffins" value="Muffins">
+  <label for="v4"  class="a2"> Muffins (10 items per box) $ 10.00 </label><br>
+  <label for="quantity" class="a3">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="100" step="10" value="1" ><br>
+  <input type="checkbox" id="v5" name="Classic Brownies" value="Classic Brownies">
+  <label for="v5" class="a2"> Classic Brownies (20 items per box) $ 12.00</label><br>
+  <label for="quantity" class="a3">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="100" step="10" value="1" ><br>
+  <input type="checkbox" id="v6" name="Special Sandwich" value="Special Sandwich">
+  <label for="v6" class="a2"> Special Sandwich (20 items per tray) $ 30.00 </label><br>
+  <label for="quantity" class="a3">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="100" step="10" value="1" ><br>
+  <input type="checkbox" id="v7" name="Cake" value="Cake">
+  <label for="v7" class="a2">  8" Round Cake $ 49.00 </label><br>
+  <label for="quantity" class="a3">Quantity:</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="100" step="10" value="1" ><br>
+  <br><br>
+  <p class="a"><b>Payment Methods :</b></p>
+   <input type="radio" id="Cash on Delivery/Pick-up" name="Hobbies" value="Cash on Delivery/Pick-up">
+  <label for="s1" class="a2"> Cash on Delivery/Pick-up</label><br>
+  <input type="radio" id="Credit Card" name="Hobbies" value="Credit Card">
+  <label for="s2" class="a2"> Credit Card</label><br>
+  <input type="radio" id="Bank Transfer" name="Hobbies" value="Bank Transfer">
+  <label for="s3" class="a2"> Bank Transfer</label><br>
+   <input type="radio" id="PayPal" name="Hobbies" value="PayPal">
+  <label for="s4" class="a2"> PayPal</label><br>
+  <input type="radio" id="Check" name="Hobbies" value="Check">
+  <label for="s5" class="a2"> Check</label><br>
+  <input type="radio" id="Purchase Order" name="Hobbies" value="Purchase Order">
+  <label for="s6" class="a2"> Purchase Order</label><br>
+  <br>
+  <div>
+        <label class="a darkgray " for="Special Instructions"><b>Special Instructions</b></label>
+        <textarea id="Special Instructions" name="subject" placeholder="Write something.." style="height:100px;width:100%"></textarea>
+     </div>
+	 <p class="a"><b>Order Type :</b></p>
+	 <input type="radio" id="Pick-up" name="Hobbies" value="Pick-up">
+  <label for="p1" class="a2"> Pick-up</label><br>
+  <input type="radio" id="Delivery" name="Hobbies" value="Delivery">
+  <label for="p2" class="a2"> Delivery</label><br>
+	 
+	  <p class="a"><b>Pick-up/Delivery Date and Time :</b></p>
+	
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime"><br><br>
+	  
+	  <hr>
+	 <h5 class="aligncenter">Customer Details</h5> 
+	 <hr>
+	 <p class="a"><b>Delivery Address</b></p>
+	 <form>
+  <label for="fname" class="a">First Name</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+  <label for="lname" class="a">Last Name</label><br>
+  <input type="text" id="lname" name="lname" ><br>
+   <label for="gender" class="a">Gender</label><br>
+  <select id="gender" name="gender">
+    <option value="Male" class="a">Male</option>
+	<option value="Female" class="a">Female</option>
+    <option value="Other" class="a">Other</option>
+  </select><br>
+  <label for="phone" class="a">Phone Num</label><br>
+  <input type="tel" id="phone" name="phone" placeholder="11111-11111" pattern="[0-9]{5}-[0-9]{5}"><br>
+  <label for="email" class="a">E-mail</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <label for="address" class="a">Contact Address</label><br>
+  <input type="text" id="address" name="address" ><br>
+  </form>
+  <br><br><br>
+  <div class="a4">
+  <p>Reminders:</p>
+	<ul>
+  <li>After submitting this form, we'll check your order and we'll contact you within 24-48 hours for confirmation.</li>
+  <li>The turn around time depends on the ordered items.</li>
+  <li>Taxes and Shipping Fee will be applied for every order.</li>
+</ul> 
+</div>
+<br><br>
+<div id="b">
+<button class="button" onclick="m()">Place an Order</button>
+<p id="demo" ></p>
+</div>
+
+</div>
+</body>
+</html>
